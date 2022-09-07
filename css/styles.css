@@ -1,0 +1,164 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    color: white;
+    letter-spacing: .1rem;
+}
+
+/*Variables*/
+
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --main-color: #25D366;
+    --main-dark: #075E54;
+    --gray: #202020;  
+}
+
+html{
+    font-family: var(--main-font);
+    background-color: var(--gray);
+    overflow:hidden ;
+}
+
+
+.whatsapp-container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1.23rem;
+}
+
+.whatsapp-container .sidebar{
+    height: 100%;
+    background-color: var(--gray);
+    border-right: 1px solid white;
+}
+
+.whatsapp-container .sidebar .topnavigation{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1.5rem;
+    justify-content: space-between;
+    background-color: var(--gray);
+}
+
+.whatsapp-container .sidebar .topnavigation .nav-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.whatsapp-container .sidebar .topnavigation .nav-img img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.whatsapp-container .sidebar .topnavigation .icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.whatsapp-container .sidebar .search-bar{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8rem 0;
+}
+
+.whatsapp-container .sidebar .search-bar input{
+    height: 8vh;
+    width: 19rem;
+    margin-right: 1.23rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 1.23rem 1.5rem;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+    font-size: 1.23rem;
+}
+
+.whatsapp-container .sidebar .messages{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+.whatsapp-container .sidebar .messages .message-container{
+    height: 10vh;
+    display: flex;
+}
+
+.whatsapp-container .sidebar .messages .message-container .img{
+    flex: 1;
+    height: 100%;
+    margin-right: 1.23rem;
+}
+
+.whatsapp-container .sidebar .messages .message-container .img img{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.whatsapp-container .sidebar .messages .message-container .text{
+    flex: 4;
+    display: flex;
+}
+
+.whatsapp-container .sidebar .messages .message-container .text .left{
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.whatsapp-container .sidebar .messages .message-container .text .left h3{
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.whatsapp-container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-container .content .img{
+    margin-bottom:3rem;
+}
+
+.whatsapp-container .content .img img{
+    height: 6rem;
+}
+
+.whatsapp-container .content .text-center{
+    text-align: center;
+}
+
+.whatsapp-container .content .text-center h1{
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.whatsapp-container .content .text-center p{
+    width: 38rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
